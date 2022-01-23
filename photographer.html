@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/8713be4e60.js" crossorigin="anonymous"></script>
+    <title>Photographer-page</title>
+</head>
+<body class="body-page">
+    <header class="header">
+        <div class="header_logo">
+            <a href="/index.html">
+            <img src="/Sample Photos/logo.png" id="logo" alt="Fisheye Home page" />
+            </a>
+        </div>
+    </header>
+    <div id="header-page">
+        <div id="header-details">
+              <h1 id="name"></h1>
+             <div id="page-loc">
+                 <p id="city"></p>
+                <p id="tagline"></p>
+            </div>
+        </div>
+        <div id="header-page-btn"><a href="#" cursor="pointer"><button class="btn-page">Contactez-moi</button></a></div>
+        <div id="header-page_img"></div>
+    </div>
+    <main class="main-page">
+            <div class="page-content_filter">
+                <p class="page-content_filter_txt"><b>Trier par</b></p>
+                <select name="page-select" id="select-page">
+                        <option value="popularity">Popularité</option>
+                        <option value="date">Date</option>
+                        <option value="title">Titre</option>
+                </select>
+            </div>
+            <div id="page-content-photo">
+            <!-- injecté avec photographer.js     -->
+            </div>
+    </main>
+    <div id="bot-container">
+
+            <p id="total-like">0</p>
+            <i class="fas fa-heart" id="like_counter"></i>
+        <div id="photographer_price"></div>
+    </div>
+    <footer>
+        <script src="/scripts/photographer.js"></script>
+    </footer>
+</body>
+</html>

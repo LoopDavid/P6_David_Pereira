@@ -24,13 +24,13 @@ class Lightbox {
      * @param {string[]} images chemin des images de la lightbox
      */
 
-    constructor(url, images, videos) {
+    constructor(url, images) {
         this.element = this.buildDOM(url);
         this.images = (url) => {
             if(url === images) {
-                images
+                this.images = media.image;
             } else {
-                videos
+                this.images = media.video;
             }
         };
         // TODO : If img = img // else video = Mp4

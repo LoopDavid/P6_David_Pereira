@@ -1,6 +1,7 @@
 body {
   font-family: "DM Sans", sans-serif;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 a {
